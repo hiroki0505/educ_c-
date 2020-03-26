@@ -1,0 +1,11 @@
+adder: main.o func.o
+	g++ -Wall main.o func.o adder
+
+main.o:main.cpp
+	g++ main.cpp -c
+
+func.o:func.cpp
+	g++ func.cpp -c
+
+erase:
+	rm *.o

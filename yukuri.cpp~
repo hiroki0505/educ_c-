@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int gcd(int a,int b)
+{
+		if(a%b==0){
+				cout<<"最大公約数は:"<<b<<endl;
+		}else if(b%a==0){
+				cout<<"最大公約数は:"<<a<<endl;
+		}else{
+				gcd(b,a%b);
+		}
+}
+int main(){
+		int a,b;
+		cin>>a>>b;
+		cout<<a<<"と"<<b<<"の"<<gcd(a,b)<<endl;
+		return 0;
+}
+
