@@ -7,6 +7,6 @@ int main()
 	int a,b,c;
 	cin>>a>>b;
 	c=add(a,b);
-	cout <<"anser"<< c<<endl;
+	cout <<"anser:"<< c<<endl;
 	return 0;
 }
